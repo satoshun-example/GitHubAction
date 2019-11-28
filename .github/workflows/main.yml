@@ -7,6 +7,6 @@ jobs:
 
     steps:
       - uses: kentaro-m/auto-assign-action@v1.0.1
-        if: github.ref == "test"
+        if: github.ref == 'test'
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
