@@ -2,7 +2,7 @@ name: 'Auto Assign'
 on:
   pull_request:
     branches:
-    - hoge2
+      - hoge2
 
 jobs:
   add-reviews:
