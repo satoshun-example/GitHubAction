@@ -7,6 +7,6 @@ jobs:
 
     steps:
       - uses: kentaro-m/auto-assign-action@v1.0.1
-        if: contains(github.ref, 'fuga')
+        if: contains(github.head_ref, 'fuga')
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
