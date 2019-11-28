@@ -10,3 +10,7 @@ jobs:
         if: contains(github.head_ref, 'fuga')
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Dump GitHub head_ref
+        run: echo github.head_ref
+      - name: Dump GitHub ref
+        run: echo github.ref
